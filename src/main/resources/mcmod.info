@@ -1,14 +1,14 @@
 [
   {
     "modid": "${modid}",
-    "name": "Quartz",
-    "description": "A QOL mod for Hypixel",
+    "name": "Xample Mod",
+    "description": "A mod that is used as an example.",
     "version": "${version}",
-    "mcversion": "${mcversion}",
-    "url": "",
+    "mcversion": "1.8.9",
+    "url": "https://github.com/romangraef/Forge1.8.9Template/",
     "updateUrl": "",
     "authorList": [
-      "Tensei"
+      "You"
     ],
     "credits": "",
     "logoFile": "",

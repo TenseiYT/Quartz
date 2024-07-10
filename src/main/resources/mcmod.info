@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "${modid}",
+    "name": "Quartz",
+    "description": "A QOL mod for Hypixel",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Tensei"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

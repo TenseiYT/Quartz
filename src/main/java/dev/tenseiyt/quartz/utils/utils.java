@@ -3,6 +3,7 @@ package dev.tenseiyt.quartz.utils;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import gg.essential.universal.ChatColor;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -132,6 +133,12 @@ public class utils {
 
         }
 
+        public static String stripColor(String toStrip) {
+            for (ChatColor c : ChatColor.values()) {
+                toStrip = toStrip.replaceAll(c.toString(), "");
+            }
+            return toStrip;
+        }
 
 }
 

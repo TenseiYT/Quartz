@@ -1,5 +1,9 @@
 package dev.tenseiyt.quartz;
 
+import cc.polyfrost.oneconfig.events.event.InitializationEvent;
+import cc.polyfrost.oneconfig.libs.eventbus.Subscribe;
+import cc.polyfrost.oneconfig.utils.commands.CommandManager;
+import dev.tenseiyt.quartz.config.QuartzOneConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.multiplayer.WorldClient;
@@ -15,6 +19,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
+import dev.tenseiyt.quartz.config.QuartzOneConfig;
 
 
 @Mod(modid = "quartz", useMetadata=true)
@@ -53,6 +58,15 @@ public class Main {
             mcPlayer.addChatMessage(linkMessage);
             sentUpdateReminder = true;
         }
+
+    }
+        public static Main INSTANCE;
+        public static QuartzOneConfig config;
+
+
+        @Subscribe
+        public void onInit(InitializationEvent event) {
+            config = new QuartzOneConfig();
 
     }
 
